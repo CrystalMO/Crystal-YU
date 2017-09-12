@@ -1,0 +1,117 @@
+<!-- 收藏管理 -->
+<div  id="collect" class="user_change fr">
+	<div class="change_title">
+		<span class="spot"></span>
+		<span class="title">管理收藏</span>
+	</div>
+	<div class="collect_main">
+		<div class="mainer">
+			<div id="list_menu">
+				<div class="fr group">
+					<button class="btn active">
+						<i class="iconfont icon-list_icon"></i> 所有分区
+					</button>
+				
+					<button class="btn">动画</button>
+					<button class="btn">音乐</button>
+					<button class="btn">舞蹈</button>
+					<button class="btn">游戏</button>
+					<button class="btn">娱乐</button>
+					<button class="btn">科技</button>
+					<button class="btn">影视</button>
+					<button class="btn">体育</button>
+					<button class="btn">鱼塘</button>
+					<button class="btn">文章</button>
+				</div>
+			</div>
+			<p class="divider"></p>
+			<div id="list_video">
+				<p class="alert">
+					<i class="iconfont icon-infocircle"></i> 尚未记录任何收藏信息。
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 浏览历史 -->
+<div  id="history" class="user_change fr">
+	<div class="change_title">
+		<span class="spot"></span>
+		<span class="title">浏览历史</span>
+	</div>
+	<div class="history_main">
+		<div class="mainer">
+			<p class="alert">
+				<i class="iconfont icon-infocircle"></i> 尚未记录任何历史信息。
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- 上传稿件 -->
+<div  id="upload" class="user_change fr">
+	<div class="change_title">
+		<span class="spot"></span>
+		<span class="title">上传稿件</span>
+	</div>
+	<div class="upload_main">
+		<div class="content">
+			<div class="fl">
+				<p>投稿信息</p>
+				<span class="u_hint">（红色标记为必填项）</span>
+				<div class="line">
+					<span class="u_title">标题<em>*</em></span>
+					<input id="upload_title" type="text" name="title" placeholder="好的标题可能吸引更多观众...">
+				</div>
+				<div class="line">
+					<span class="u_title">类型<em>*</em></span>
+					<input type="radio" >原创<input type="radio">搬运
+				</div>
+				<div class="line">
+					<span class="u_title">分区<em>*</em></span>
+					<select>
+						<option>动画</option>
+						<option>音乐</option>
+						<option>舞蹈</option>
+						<option>游戏</option>
+						<option>娱乐</option>
+						<option selected="selected">鬼畜</option>
+						<option>科技</option>
+					</select>
+				</div>
+				<div class="line">
+					<span class="u_title">封面<em>*</em></span>
+					<div class="upload_cover">
+						<i class="iconfont icon-add_pic"></i>
+					</div>
+					<p>推荐使用高清精美的封面吸引更多Acer们来围观</p>
+					<span class="hint">支持≤3MB，JPG、JPEG、PNG格式文件</span>
+				</div>
+				<div class="line">
+					<span class="u_title">标签<em>*</em></span><br>
+					<textarea placeholder="输入内容按回车键保存会生成新的标签，还可添加10个标签"></textarea>
+				</div>
+				<div class="line">
+					<span class="u_title">简介<em>*</em></span><br>
+					<textarea placeholder="输入内容按回车键保存会生成新的标签，还可添加10个标签"></textarea>
+				</div>
+				
+			</div>
+			<div class="fr">
+				<div class="line">
+					<p>投稿内容</p>
+					<span class="hint">（点击箭头可调整排序）</span>
+					<button class="file_btn" style="margin-right: 0;">选择本地文件</button>
+				</div>
+				<div class="file">
+					<i class="iconfont icon-upload_icon"></i>
+				</div>
+				
+			</div>
+			<div class="upload_btn">
+				<button class="upload_submit">投稿</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>视频播放播放</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="播放器" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/video.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+
+</head>
+<body>
+	<!-- 顶部导航栏 -->
+	<div id="header">
+		<div class="wp guide">
+			<div class="gl">
+				<a href="/" class="header_logo"><img src="img/logo-new.png"></a>
+				<a href="index.html">番剧</a>
+				<a href="index.html">动画</a>
+				<a href="index.html">音乐</a>
+				<a href="index.html">舞蹈</a>
+				<a href="index.html">游戏</a>
+				<a href="/">娱乐</a>
+				<a href="/">科技</a>
+				<a href="/">影视</a>
+				<a href="/">体育</a>
+				<a href="/">鱼塘</a>
+				<a href="/">文章</a>
+				<a href="/">合辑</a>
+			</div>
+			<div class="gr">
+				<div class="search_box fr" >
+					<form id="search_form">
+						<input type="text" placeholder="请输入关键词" class="search_txt">
+						<button class="search_btn">
+							<i class="iconfont icon-sousuo-sousuo"></i>
+						</button>
+					</form>
+					<div class="search_feedback">
+						<span class="search_hot">今日热搜</span>
+						<div class="search_menu">
+							<a href="#" class="item item_cur">
+								<span>1</span>
+								<em>银魂最新话</em>
+							</a>
+							<a href="#" class="item item_cur">
+								<span>2</span>
+								<em>孔明绝唱</em>
+							</a>
+							<a href="#" class="item ">
+								<span>3</span>
+								<em>童话镇</em>
+							</a>
+							<a href="#" class="item">
+								<span>4</span>
+								<em>金坷垃</em>
+							</a>
+						</div>
+					</div>
+				</div>
+				<ul class="header_member fr">
+					<li class="member_item login">
+						<a href="login.html">登录|注册</a>
+						<a href="user_page.html" id="user_login" style="display: none;"></a>
+						<span class="logout">退出登陆</span>
+					</li>
+					<li class="member_item history">
+						<a href="#">
+							<i class="iconfont icon-lishi1"></i>
+						</a>
+						<div class="member_hover">
+							<span class="text">尚未记录任何历史信息</span>
+							<a href="#" class="more">More</a>
+						</div>
+					</li>
+					<li class="member_item upload">
+						<a href="#">
+							<i class="iconfont icon-upload_icon"></i>
+						</a>
+						<div class="member_hover">
+							<ul>
+								<li><a href="#">投视频</a></li>
+								<li><a href="#">投文章</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="member_item collect">
+						<a href="#">
+							<i class="iconfont icon-shoucang"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="mainer">
+		<!-- 视频标题 -->
+		<section class="clearfix wp area head">
+			<div class="title">【喵帕斯】角色歌</div>
+			<div class="crumbs">
+				<div class="bd_crumb" >
+					<a class="avatar_wrap" href="#" target="_blank">
+						<img class="avatar" src="img/txpic.jpg">
+					</a>
+					<a class="name_wrap" href="#" target="_blank">miaomiao</a>
+					<span class="sp">发布于</span>
+					<span class="time">2017-05-16 14:28</span>
+					<span class="collect_video">
+						<a href="javascript:;" id="collect">收藏视频</a>
+					</span>
+				</div>
+			</div>
+		</section>
+		<!-- 视频播放器 -->
+		<section class="clearfix wp area player">
+			<div class="video_play fl">
+				<div id="main" >
+			          	<div >
+			          		<div id="danmup"></div>
+			          	</div>
+			      </div>
+			</div>
+			<div class="danmu_list fr">
+				<div class="list_title">
+					<span>弹幕列表</span>
+				</div>
+				<div class="list_content">
+					<ul>
+						<li>
+							<span class="time">时间</span>
+							<span class="content">弹幕内容</span>
+						</li>
+						<li>
+							<span class="time">00:06</span>
+							<span class="content">666</span>
+						</li>
+						<li>
+							<span class="time">00:06</span>
+							<span class="content">hahhahahah</span>
+						</li>
+						<li>
+							<span class="time">00:08</span>
+							<span class="content">呜哈哈哈哈哈</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- 视频简介区 -->
+		<div class="introdution">
+			<section class="clearfix wp area">
+				<div class="columen_left fl">
+					<div class="title">简介</div>
+					<div class="desc">
+						<div class="sp1">超萌的喵帕斯角色歌</div>
+						<span class="open">展开详情</span>
+						<span class="close">关闭详情</span>
+					</div>
+					<div class="tag">
+						<span class="tag_name fl">喵帕斯</span>
+						<span class="tag_name fl">悠哉日常大王</span>
+						<span class="tag_name fl">动漫</span>
+					</div>
+				</div>
+				<div class="columen_right fr">
+					<div></div>
+				</div>
+			</section>
+			<section class="clearfix wp ad">
+				<a href="#">
+					<img src="img/cont/ad.png">
+				</a>
+			</section>
+		</div>
+		<!-- 评论区 -->
+		<div class="comment_area">
+			<section class="clearfix wp area comm">
+				<div class="publish_comm">
+					<div class="tx_pic">
+						<img src="img/txpic.jpg">
+					</div>
+					<div class="comm_content">
+						<input type="text" name="comment" placeholder="请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。" class="comment">
+						<button class="publish">发表评论</button>
+					</div>
+				</div>
+				<div class="content_list">
+					<div class="tx_pic">
+						<img src="img/txpic.jpg">
+					</div>
+					<div class="comm_list">
+						<span class="users_name">科学电磁炮</span>
+						<p class="users_comm">我只想说666666</p>
+						<span class="comm_time">2017-05-23 21:22</span>
+					</div>
+				</div>
+				
+			</section>
+		</div>
+	</div> 
+
+	<script src="js/jquery.js"></script>
+      <script src="js/jquery.shCircleLoader.js"></script>
+      <script src="js/jquery.danmu.js"></script>
+	<script src="js/danmu.js"></script>
+      <script src="js/main.js"></script>
+
+      <script>
+             $("#danmup").DanmuPlayer({
+              	src: "video/miao.mp4",
+                  height: "550px", //区域的高度
+                  width: "695px" //区域的宽度
+                  ,urlToGetDanmu:"getData.php"
+                  ,urlToPostDanmu:"sendData.php"
+             });
+
+            $("#danmup .danmu-div").danmu("addDanmu",[
+              { "text":"这是滚动弹幕" ,color:"white",size:1,position:0,time:2}
+              ,{ "text":"我是帽子绿" ,color:"green",size:1,position:0,time:3}
+              ,{ "text":"哈哈哈啊哈" ,color:"#f30",size:1,position:0,time:10}
+              ,{ "text":"这是黄色的弹幕" ,color:"yellow" ,size:1,position:0,time:3}
+              ,{ "text":"好快啊" , color:"red" ,size:1,position:0,time:19}
+              ,{ "text":"大家好，我是打不死的小强" ,color:"orange",size:1,position:0,time:23}
+              ,{ "text":"大家好，我是打不死的小强" , color:"blue" ,size:1,position:0,time:30}
+              ,{ "text":"大家好，我是打不死的小强" , color:"#bbb" ,size:1,position:0,time:50}
+              ])
+      </script>
+
+</body>
+</html>

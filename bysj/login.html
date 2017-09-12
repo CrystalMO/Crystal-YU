@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登陆</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<link rel="stylesheet" type="text/css" href="css/login_in.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	
+</head>
+<body>
+	<!-- 导航 -->
+	<div id="header">
+		<div class="guide">
+			<div class="gl">
+				<a href="/" class="header_logo"><img src="img/logo-new.png"></a>
+				<a href="index.html">番剧</a>
+				<a href="index.html">动画</a>
+				<a href="index.html">音乐</a>
+				<a href="index.html">舞蹈</a>
+				<a href="index.html">游戏</a>
+				<a href="index.html">娱乐</a>
+				<a href="index.html">科技</a>
+				<a href="index.html">影视</a>
+				<a href="index.html">体育</a>
+				<a href="/">鱼塘</a>
+				<a href="/">文章</a>
+				<a href="/">合辑</a>
+			</div>
+			<div class="gr">
+				<form id="search" >
+					<input type="text" placeholder="请输入关键词" class="search_txt">
+					<button class="search_btn">
+						<i class="iconfont icon-sousuo-sousuo"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="mainer">
+		<!-- 大图 -->
+		<div class="main_left"></div>
+		<!-- 登陆 -->
+		<div class="main_right_login" >
+			<form name="LoginForm" class="login_form" action="login.php" method="POST">
+				<h3 class="title">登陆</h3>
+				<div class="area login_area">
+					<i class="iconfont icon-36x36jiuzhen"></i>
+					<input name="loginname" type="text" spellcheck="false" autocomplete="on" data-length="1,32" required="required" placeholder="请输入账号" class="username" id="login_name">
+				</div>
+				<div class="area login_area">
+					<i class="iconfont icon-mima"></i>
+					<input name="loginpwd" type="password" data-direction="right" autocomplete="off" data-name="密码" placeholder="请输入密码" required="required" class="password" id="login_pwd">
+				</div>
+				<div class="login_reg_btn">
+					<input type="submit" name="submit" value="登陆" class="btn_login">
+					<a href="#" class="btn_reg" >注册</a>
+				</div>
+				<span class="get_paw"><a href="#">忘记密码？</a></span>
+			</form>
+		</div>
+		<!-- 注册 -->
+		<div class="main_right_reg"  style="display: none;">
+			<form class="reg_form" method="POST" >
+				<h3 class="title">注册</h3>
+				<div class="area reg_area">
+					<i class="iconfont icon-wode"></i>
+					<input id="users_name" type="text"  autocomplete="off" placeholder="请输入昵称" name="user" class="usersName">
+					<span class="error" id="e1">*请输入2~12字符的用户名</span>
+				</div>
+				<div class="area reg_area">
+					<i class="iconfont icon-mima"></i>
+					<input id="users_paw" type="password" autocomplete="off" placeholder="请输入密码" name="password" class="usersPaw">
+					<span class="error" id="e2">*请输入6~12字符的密码</span>
+				</div>
+				<div class="area reg_area">
+					<i style="padding-right: 15px;"></i>
+					<input id="paw_confirm" type="password" autocomplete="off" placeholder="确认密码" name="pawConfirm" class="pawConfirm">
+					<span class="error" id="e3">*两次密码输入不一致</span>
+				</div>
+				<!-- 验证码 -->
+				<div class="reg_verify">
+					<input type="text" placeholder="输入验证码" id="inputCode" class="input_validate">
+					<div class="creat_validate">
+						<div class="show_validate" id="checkCode"></div>
+						<a id="createma">看不清？换一张</a>
+					</div>
+				</div>
+				<div class="back_login">
+					<input type="checkbox" checked="checked">我已经认真阅读并同意AcFun的<a href="#">《使用协议》</a>。<a href="#" class="back_btn ">返回登陆</a>
+				</div>
+				<div >
+					<input type="submit" value="注册" class="reg_btn" id="submit" onclick="validateCode();">
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="foot_main">
+			<a class="foot_logo" href="/"></a>
+			<p>本站不提供任何视听上传服务，所有内容均来自视频分享站点所提供的公开引用资源。</p>
+		</div>
+	</div>
+	
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.form.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/login_reg.js"></script>
+	<script src="js/validate.js"></script>
+</body>
+</html>

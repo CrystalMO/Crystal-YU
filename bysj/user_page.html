@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人中心</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/user_page.css">
+	<link rel="stylesheet" type="text/css" href="css/user_menu.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+
+</head>
+<body>
+	<!-- 顶部导航栏 -->
+	<div id="header">
+		<div class="wp guide">
+			<div class="gl">
+				<a href="index.html" class="header_logo"><img src="img/logo-new.png"></a>
+				<a href="/">番剧</a>
+				<a href="/">动画</a>
+				<a href="/">音乐</a>
+				<a href="/">舞蹈</a>
+				<a href="/">游戏</a>
+				<a href="/">娱乐</a>
+				<a href="/">科技</a>
+				<a href="/">影视</a>
+				<a href="/">体育</a>
+				<a href="/">鱼塘</a>
+				<a href="/">文章</a>
+				<a href="/">合辑</a>
+			</div>
+			<div class="gr">
+				<div class="search_box fr" >
+					<form id="search_form">
+						<input type="text" placeholder="请输入关键词" class="search_txt">
+						<button class="search_btn">
+							<i class="iconfont icon-sousuo-sousuo"></i>
+						</button>
+					</form>
+					<div class="search_feedback">
+						<span class="search_hot">今日热搜</span>
+						<div class="search_menu">
+							<a href="#" class="item item_cur">
+								<span>1</span>
+								<em>银魂最新话</em>
+							</a>
+							<a href="#" class="item item_cur">
+								<span>2</span>
+								<em>孔明绝唱</em>
+							</a>
+							<a href="#" class="item ">
+								<span>3</span>
+								<em>童话镇</em>
+							</a>
+							<a href="#" class="item">
+								<span>4</span>
+								<em>金坷垃</em>
+							</a>
+						</div>
+					</div>
+				</div>
+				<ul class="header_member fr">
+					<li class="member_item login">
+						<a href="login.html">登录|注册</a>
+						<a href="user_page.html" id="user_login" style="display: none;"></a>
+						<span class="logout">退出登陆</span>
+					</li>
+					<li class="member_item history">
+						<a href="#">
+							<i class="iconfont icon-lishi"></i>
+						</a>
+						<div class="member_hover">
+							<span class="text">尚未记录任何历史信息</span>
+							<a href="#" class="more">More</a>
+						</div>
+					</li>
+					<li class="member_item upload">
+						<a href="#">
+							<i class="iconfont icon-upload_icon"></i>
+						</a>
+						<div class="member_hover">
+							<ul>
+								<li><a href="#">投视频</a></li>
+								<li><a href="#">投文章</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="member_item collect">
+						<a href="#">
+							<i class="iconfont icon-shoucang"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 主体内容 -->
+	<div id="main">
+		<div class="wp mainer ">
+		<!-- 标题 -->
+			<div class="wp title">
+				<div class="title_inner">
+					<span class="title_title">编辑资料</span>
+				</div>
+			</div>
+			<!-- 用户编辑信息模块 -->
+			<div class="wp user_info">
+				<!-- 左侧 -->
+				<div class="user_menu fl">
+					<a href="javascript:;" class="thumb" title="点击编辑资料">
+						<img src="img/txpic.jpg">
+					</a>
+					<span class="name">好大の疯</span>
+					<span class="group">普通会员</span>
+					<button class="sign_in_1">签到</button>
+					<button class="sign_in_2" style="display: none;">
+						<i class="iconfont icon-selected"></i>
+						已签到
+					</button>
+					<p title="点击以修改签名" class="desx" contenteditable="true">
+						这个人很懒，什么都没有写...
+						<i class="iconfont icon-iconfontcolor32"></i>
+					</p>
+					<div class="user_extra">
+						<a href="#">
+							<span class="pts">0</span>
+							<span class="hint">投稿</span>
+						</a>
+						<a href="#">
+							<span class="pts">5</span>
+							<span class="hint">金币</span>
+						</a>
+						<a href="#">
+							<span class="pts">1</span>
+							<span class="hint">等级</span>
+						</a>
+					</div>
+					<div class="left_guide">
+						<a href="index.html" class="guide_item">
+							<i class="iconfont icon-zhuye"></i>主页
+						</a>
+						<a id="collect_btn" href="javascript:;" class="guide_item">
+							<i class="iconfont icon-shoucang3"></i>收藏夹
+						</a>
+						<a id="history_btn" href="javascript:;" class="guide_item">
+							<i class="iconfont icon-lishi1"></i>历史
+						</a>
+						<a id="upload_btn" href="javascript:;" class="guide_item">
+							<i class="iconfont icon-upload_icon"></i>上传稿件
+						</a>
+					</div>
+				</div>
+				<!-- 右侧 -->
+				<!-- 信息编辑 -->
+				<div class="content">
+					<div id="infor" class="user_change fr">
+						<div class="change_title">
+							<span class="spot"></span>
+							<span class="title">编辑资料</span>
+						</div>
+						<div class="change_main">
+							<div class="change_1 block">
+								<div class="banner">
+									<p class="tab">
+										基本信息
+										<span class="hint">Basic Information</span>
+									</p>
+								</div>
+								<div class="mainer">
+									<div class="basic">
+										<div class="a fl">
+											<img src="img/txpic.jpg">
+										</div>
+										<div class="b fl">
+											<span id="name">好大の疯</span>
+											<span id="uid">Uid:001</span>
+											<span id="group">普通会员</span>
+											<p id="reg_date">注册于2017年5月1日</p>
+											<pre id="user_sign" title="单击修改签名" contenteditable="true">这个人很懒，什么都没有写...
+											</pre>
+										</div>
+									</div>
+									<p class="divider"></p>
+									<div class="unit_tool">
+										<div class="fl">
+											<a href="#" class="btn info">
+											<i class="iconfont icon-36x36jiuzhen"></i>
+											修改头像</a>
+											<a href="#" class="btn primary">
+											<i class="iconfont icon-iconfontcolor32"></i>
+											修改个性签名</a>
+										</div>
+										<div class="fr">
+											<a href="#" class="btn info">
+											<i class="iconfont icon-mima"></i>
+											修改密码</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="change_2 block">
+								<div class="banner">
+									<p class="tab">
+										扩展信息
+										<span class="hint">Extra Information</span>
+									</p>
+								</div>
+								<div class="mainer">
+									<p class="alert">
+										扩展信息将会显示在用户的个人空间中。<br>
+										请留空您不想暴露的个人信息，以免造成不必要的隐私泄露。
+									</p>
+									<div class="main_form">
+										<form id="extra_info">
+											<div class="unit">
+												<span class="item_name">性别</span>
+												<select>
+													<option value="-1">不公开</option>
+													<option value="1">男</option>
+													<option value="0">女</option>
+												</select>
+											</div>
+											<div class="unit">
+												<span class="item_name">性取向</span>
+												<select>
+													<option value="-1">不公开</option>
+													<option value="1">异性恋</option>
+													<option value="0">同性恋</option>
+													<option value="2">双性恋</option>
+													<option value="3">其他</option>
+												</select>
+											</div>
+											<div class="unit">
+												<span class="item_name">真实姓名</span>
+												<input type="text" class="real_name" placeholder="请输入真实姓名">
+											</div>
+											<div class="unit">
+												<span class="item_name">手机号码</span>
+												<div class="right">
+													<span class="phone_num">132*****320</span>
+													<a href="#" class="btn phone">修改电话</a>
+												</div>
+											</div>
+											<div class="unit">
+												<span class="item_name">所在地</span>
+												<div class="right">
+													<select class="province"></select>
+													<select class="city"></select>
+												</div>
+											</div>
+											<div class="unit">
+												<span class="item_name">个人主页</span>
+												<input type="text" class="real_name" placeholder="请输入个人控件地址">
+											</div>
+											<div class="unit">
+												<span class="item_name">QQ号码</span>
+												<input type="text" class="real_name" placeholder="请输入QQ号码">
+											</div>
+										</form>
+										<p class="divider"></p>
+										<div class="unit_tool">
+												<a href="#" class="btn primary">
+													<i class="iconfont icon-selected"></i>
+													保存个人资料
+												</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+		</div>
+	</div>
+	<!-- 返回顶部按钮 -->
+	<div id="back_top">
+		<img src="img/top.png">
+	</div>
+	<!-- 底部 -->
+	<div id="footer">
+		<div class="foot_main">
+			<a class="foot_logo" href="/"></a>
+			<p>本站不提供任何视听上传服务，所有内容均来自视频分享站点所提供的公开引用资源。</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/user_page.js"></script>
+	<script type="text/javascript" src="js/city_select.js"></script>
+</body>
+</html>

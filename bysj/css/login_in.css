@@ -1,0 +1,303 @@
+/*-----------顶部-----------*/
+#header{
+	position: fixed;
+	width: 100%;
+	height: 46px;
+	top: 0;
+	z-index: 999;
+	background-color: #fff;
+	border-bottom: 1px solid #ffa5c7;
+}
+#header .guide{
+	margin: 0 auto;
+	width: 980px;
+	height: 46px;
+}
+#header .guide a{
+	display: inline-block;
+	float: left;
+	width: 38px;
+	height: 46px;
+	font-size: 15px;
+	line-height: 46px;
+	padding: 0 5px;
+}
+#header .guide .gl a:first-child{
+	width: 100px;
+	height: 46px;
+	line-height: 46px; 
+	margin-top: 10px;
+}
+#header .guide a:hover{
+	color: #ffa5c7;
+}
+#header .gr{
+	position: absolute;
+	right: 195px;
+	top: 10px;
+	display: inline-block;
+}
+#header .gr .search_txt{
+	width: 116px;
+	height: 26px;
+	line-height: 26px;
+	padding-left: 2px;
+	border: 1px solid #67bdcd;
+	border-radius: 3px 0 0 3px;
+	border-right: none;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #e5e5e5;
+	float: left;
+}
+#header .gr .search_btn{
+	width: 26px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border-radius: 0 3px 3px 0;
+	color: #fff;
+	font-size: 14px;
+	background-color: #67bdcd; 
+	float: left;
+}
+/*二级导航区*/
+
+/*-----------主体-----------*/
+#mainer{
+	width: 980px;
+	height: 800px;
+	top: 46px;
+	margin: 0 auto;
+	background-color: none;
+	position: relative;
+}
+/*左边大图*/
+#mainer .main_left{
+	position: absolute;
+	float: left;
+	width: 490px;
+	height: 356px;
+	background: url(../img/img.jpg) 50% 50% no-repeat;
+	line-height: 356px;
+	margin: 150px auto;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 0 30px 20px rgba(255,255,255,.7) inset;
+}
+/*登录注册共用部分*/
+.area{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #bbb;
+}
+.title{
+	left: 35%;
+	margin-bottom: 30px;
+	transition: none;
+	font-size: 20px;
+	padding: 4px 0 4px 35px;
+	width: 160px;
+	color: #666;
+	position: relative;
+	background: url("../img/logo_icon.png") left no-repeat;
+}
+#mainer .main_right_login,
+#mainer .main_right_reg{
+	width: 490px;
+	margin-top: 180px;
+	float: right;
+	position: relative;
+}
+#mainer .main_right_reg i,
+#mainer .main_right_login i{
+	font-size: 16px;
+	color: #bababa;
+}
+.error{
+	float: right;
+	font-size: 14px;
+	color: red;
+}
+/*登录*/
+#mainer .main_right_login{
+	height: 356px;
+}
+#mainer .main_right_login .login_form{
+	position: absolute;
+	width: 290px;
+	height: 220px;
+	margin-left: 100px;
+	background-color: none;
+}
+#mainer .main_right_login .login_form .login_area{
+	width: 275px;
+}
+#mainer .main_right_login .login_form .login_reg_btn{
+	width: 290px;
+	height: 40px;
+}
+#mainer .main_right_login .login_form .login_reg_btn>a,
+#mainer .main_right_login .login_form .login_reg_btn input{
+	display: block;
+	float: left;
+	width: 135px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	color: #666;
+	text-align: center;
+	border: 1px solid #bbb;
+}
+#mainer .main_right_login .login_form .login_reg_btn input{
+	border: none;
+	background: #67bdcd;
+	color: #fff;
+	margin-right: 15px;
+	cursor: pointer;
+}
+#mainer .main_right_login .login_form .get_paw{
+	display: block;
+	width: 290px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 15px;
+	border: none;
+	text-align: right;
+	font-size: 12px;
+	color: #bbb;
+}
+#mainer .main_right_login .login_form .get_paw a{
+	font-size: 12px;
+	color: #bbb;
+}
+
+/*注册*/
+#mainer .main_right_reg{
+	height: 510px;
+}
+#mainer .main_right_reg .reg_form{
+	position: absolute;
+	width: 290px;
+	height: 510px;
+	margin-left: 100px;
+	background-color: none;
+}
+#mainer .main_right_reg .reg_form .reg_area{
+	width: 365px;
+}
+.error{
+	position: relative;
+	top: -5px;
+	left: 0;
+	color: red;
+	line-height: 50px;
+	text-align: left;
+	font-size: 14px;
+	display: none;
+}
+/*验证码*/
+#mainer .main_right_reg .reg_form .reg_verify{
+	width: 380px;
+	height: 40px;
+	border: none;
+	margin-bottom: 15px;
+}
+ .reg_verify .input_validate{
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #aaa;
+	font-size: 16px;
+	color: #999;
+	text-indent: 10px;
+	position: absolute;
+	left: 0;
+}
+.reg_verify .creat_validate{
+ 	width: 190px;
+ 	height: 40px;
+	position: absolute;
+	left: 195px;
+	float: right;
+}
+.reg_verify .creat_validate .show_validate{
+	width: 100px;
+	height: 40px;
+}
+.creat_validate a{
+	text-decoration: none;
+	color: #bbb;
+	font-size: 12px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+}
+#checkCode
+{
+ background-color: #439893;
+ font-family:Arial;
+ color:blue;
+ font-size:35px;
+ float:left;
+ cursor:pointer;
+}
+
+/*返回登陆*/
+#mainer .main_right_reg .reg_form .back_login{
+	width: 380px;
+	height: 15px;
+	margin-bottom: 15px;
+	border: none;
+}
+#mainer .main_right_reg .reg_form .back_login input{
+	margin-top: 0;
+	float: left;
+	display: inline-block;
+}
+#mainer .main_right_reg .reg_form .back_login .back_btn{
+	float: right;
+}
+#mainer .main_right_reg .reg_form .back_login>a{
+	display: inline-block;
+	color: #3a86ef;
+}
+#mainer .main_right_reg .reg_form .reg_btn{
+	display: block;
+	width: 380px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 15px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	background: #67bdcd;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*-----------底部-----------*/
+#footer{
+	width: 100%;
+	height: 100px;
+	background-color: #eee;
+	position: relative;
+	clear: both;
+}
+#footer .foot_main{
+	width: 980px;
+	height: 100px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 5px;
+}
+#footer .foot_main .foot_logo{
+	width: 70px;
+	height: 22px;
+	display: block;
+	background: url("../img/sprite-guide.png") -170px -32px no-repeat;
+	margin: 50px auto 5px auto;
+}

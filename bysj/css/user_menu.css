@@ -1,0 +1,221 @@
+/*共用区*/
+.wp{
+	width: 980px;
+	margin: 0 auto;
+}
+.area{
+	margin-bottom: 36px;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+a:hover{
+	color: #fd4c5d;
+}
+.clearfix{
+	zoom: 1;
+}
+.cleardix:after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.text-overflow{
+	max-width: 100%;
+	word-break: break-all;
+	word-wrap: normal;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.divider{				/*分割线*/
+	height: 1px;
+	border-top: 1px dashed #eee;
+	margin: 8px auto;
+}
+.alert{					/*提示文本*/
+	position: relative;
+	display: block;
+	margin: 4px 10px;
+	padding: 8px;
+	border: 1px solid #bce8f1;
+	background-color: #d9edf7;
+	color: #31708f;
+	text-align: left;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.btn{
+	position: relative;
+	float: left;
+	margin: 2px 2px 0;
+	padding: 0 8px;
+	width: auto;
+	height: 28px;
+	line-height: 26px;
+	border: 1px solid #ccc;
+	border-radius: 1px;
+	background-color: #fff;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	color: #333;
+	vertical-align: middle;
+	text-align: center;font-size: 14px;
+	cursor: pointer;
+}
+.btn:first-of-type{
+	border-radius: 1px;
+	margin-left: 0;
+}
+.btn:last-of-type{
+	border-radius: 1px;
+	margin-right: 0;
+}
+.active{
+	color: #fff;
+	border-color: #247eb8;
+	background-color: #288ecf;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+	border: 1px solid #3a9bd9;
+}
+.group button:first-child{
+	margin-left: 0;
+}
+.group button{
+	margin: auto 0;
+}
+/*收藏区*/
+.user_change .collect_main,
+.user_change .history_main{
+	position: relative;
+	width: 702px;
+	margin:60px auto 0;
+	background-color: #fff;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2)
+}
+.user_change .mainer{
+	padding: 8px;
+}
+.mainer #list_menu{
+	margin: 8px auto 16px;
+	padding: 0 0 16px;
+	border-bottom: 1 dashed #ddd;
+}
+
+/*投稿区*/
+.upload_main{
+	position: relative;
+	width: 702px;
+	margin:60px auto 0;
+}
+.upload_main .content{
+	margin: 40px 10px;
+}
+.upload_main .content .fl,
+.upload_main .content .fr{
+	width: 340px;
+}
+.upload_main .content .line{
+	width: 340px;
+	min-height: 20px;
+	margin-top: 15px;
+}
+.upload_main .content p{
+	font-size: 15px;
+	display: inline-block;
+}
+.upload_main .content .u_hint{
+	font-size: 10px;
+	color: #999;
+	display: inline-block;
+}
+.upload_main .content .u_title{
+	display: inline-block;
+	font-size: 12px;
+	color: #66615f;
+	margin-right: 10px;
+}
+.upload_main .content .u_title em{
+	color: red;
+}
+.upload_main .content #upload_title{
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	background: #fff;
+	border: 1px solid #bbb;
+	border-radius: 1px;
+	font-size: 10px;
+}
+.upload_main .content select{
+	width: 100px;
+	height: 25px;
+}
+.upload_main .content  .upload_cover{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	margin-left: 100px;
+	font-size: 30px;
+	color: #999;
+	cursor: pointer;
+	border: 1px solid #999;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+.upload_main .content textarea{
+	width: 250px;
+	height: 100px;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: bottom;
+	margin-left: 25px;
+}
+.upload_main .content .file{
+	width: 340px;
+	height: 550px;
+	line-height: 550px;
+	text-align: center;
+	font-size: 50px;
+	color: #999;
+	background: #fff;
+	cursor: pointer;
+}
+.upload_main .content  .file_btn{
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	background: #3a9bd9;
+	cursor: pointer;
+	margin-right: 0;
+	padding: 0 5px;
+}
+
+.upload_main .content .upload_btn{
+	position: absolute;
+	width: 680px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	border-top: 1px solid #999;
+	margin-bottom: 0;
+	background: none;
+	top: 650px;
+}
+.upload_main .content .upload_btn .upload_submit{
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	background: #3a9bd9;
+	cursor: pointer;
+}
+.upload_main .content .upload_btn .upload_submit:hover{
+	opacity: 0.8;
+}
